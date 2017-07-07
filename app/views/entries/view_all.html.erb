@@ -1,3 +1,5 @@
+<%= session[:requests] %>
+
 <% @entries.each do |entry| %>
 <h1><%= entry.title %></h1>
 <p><%= entry.content %></p>
@@ -5,3 +7,4 @@
 <% end %>
 
 <%= link_to 'New Entry', new_entry_path %>
+<%= link_to 'View All', '/entries/view_all' %>
